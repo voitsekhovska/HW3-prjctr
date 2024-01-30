@@ -33,12 +33,12 @@ if (isNaN(data)) {
 // 2. Задача FizzBuzz
 
 for (let i = 1; i < 100; i++) {
-  if (i % 15 === 0) {
-    console.log("FizzBuzz");
-  } else if (i % 3 === 0) {
+  if (i % 3 === 0) {
     console.log("Fizz");
   } else if (i % 5 === 0) {
     console.log("Buzz");
+  } else if (i % 15 === 0) {
+    console.log("FizzBuzz");
   } else {
     console.log(i);
   }
@@ -47,15 +47,14 @@ for (let i = 1; i < 100; i++) {
 // 3. Додаткова задача*
 
 let string = "42559125";
-// let result = string.split("");
-// console.log(result);
+let result = "";
 
 for (let i = 0; i < string.length; i++) {
-  if (i < 5) {
-    console.log(string.replace(i, "0"));
-  } else if (i >= 5) {
-    console.log(string.replace(i, "1"));
+  if (string[i] < 5) {
+    console.log((result += 0));
+  } else if (string[i] >= 5) {
+    console.log((result += 1));
   } else {
-    console.log(i);
+    console.log(result);
   }
 }

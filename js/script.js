@@ -50,11 +50,6 @@ let string = "42559125";
 let result = "";
 
 for (let i = 0; i < string.length; i++) {
-  if (string[i] < 5) {
-    console.log((result += 0));
-  } else if (string[i] >= 5) {
-    console.log((result += 1));
-  } else {
-    console.log(result);
-  }
+  string[i] < 5 ? (result += 0) : (result += 1);
 }
+console.log(result);
